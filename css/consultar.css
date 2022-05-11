@@ -1,0 +1,31 @@
+
+.main-content{
+    margin: 1rem .5rem 1rem .5rem;
+    padding: 1rem 1rem 1rem 1rem;
+    background: rgb(255, 255, 255);
+    flex: 1 1 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    margin-top: .3rem;
+    background:rgb(255, 255, 255);
+    color: rgb(112, 110, 110);
+    border-style: solid;
+    border-color: rgb(112, 110, 110);
+    padding: .2rem;
+    border-radius: .8rem;
+    font-size: .8rem;
+    /*text-transform: uppercase;*/
+    display: flex;
+    flex-basis: 40%;
+}
+
+.form-element{
+    /* margin: .3rem .3rem .3rem .3rem;*/
+    margin-top: .3rem;
+    padding: .4rem;
+    flex-basis: 100%;
+    /*background-color: turquoise;*/
+ }

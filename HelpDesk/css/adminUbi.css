@@ -1,0 +1,14 @@
+.contenido-modal{
+	width: 45%;
+	
+}
+@media(max-width: 1422px){
+    .mod-form-block{
+        flex-wrap: nowrap;
+    }
+    
+    .block{
+        margin: 5px 2px;
+        flex-wrap: nowrap;
+    }
+}

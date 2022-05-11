@@ -1,0 +1,589 @@
+@import url('normalize.css');
+
+a{
+    text-decoration: none;
+    color: #8b8a8a;
+}
+
+*{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: #8b8a8a;
+    /*size: 18px;
+    inline-size: 18px;*/
+}
+
+
+body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    min-width: 750px;
+    height: 100vh;
+}
+/*                      HEADER                      */
+.header{
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    order: 1;
+    align-self: flex-start;
+    align-content: flex-start;
+    font-size: 20px;
+}
+
+.header-element{
+    flex: 1 1 33%;
+    display: flex;
+    flex-direction: row;
+    padding-left: .8em;
+    padding-right: .8em;
+}
+
+.header-element-content{
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logoCta{ justify-content: flex-end;}
+#logoCusur{ justify-content: flex-start; }
+#logoCusur img{ width: 17rem; }
+#logoCta img{ width: 7rem; }
+
+.nav{
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    /*border: transparent;
+    border-top: rgb(112, 110, 110);
+    border-bottom: rgb(112, 110, 110);
+    border-style: solid;*/
+    order: 2;
+}
+
+.nav-ele{
+    margin: .3rem 1rem .3rem 1rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+/*                     CUERPO                       */
+
+.main-body{
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    order: 3;
+}
+
+.main{
+    margin: .5rem .5rem .5rem .5rem;
+    padding: .5rem .5rem .5rem .5rem;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+}
+
+.main-content{
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+form{
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.form-content{
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.form-element{
+   /* margin: .3rem .3rem .3rem .3rem;*/
+   margin-top: .3rem;
+   padding: .4rem;
+   flex-basis: 30%;
+   /*background-color: turquoise;*/
+}
+
+.form-content input, .form-content textarea, .form-content select, form button{
+    margin-top: .3rem;
+    background:rgb(255, 255, 255);
+    color: rgb(112, 110, 110);
+    border-style: solid;
+    border-color: rgb(112, 110, 110);
+    padding: .2rem;
+    border-radius: .8rem;
+    font-size: .8rem;
+    /*text-transform: uppercase;*/
+    display: flex;
+}
+
+select, .form-content input{
+    flex-basis: 40%;
+    font-size: 1rem;
+}
+
+textarea{
+    flex-basis: 40%;
+    font-size: 1rem;
+    height: 15vh;
+}
+
+#btn-Enviar, select{
+    background-color: rgb(112, 110, 110);
+    color: white;
+    font-size: 1rem;
+}
+
+#online{
+    flex-basis: 100%;
+}
+
+.footer {
+    color: gray;
+    background-color: beige;
+    flex: 1 1 100%;
+    order: 4;
+    align-self: flex-end;
+}
+
+.userBox{
+    flex-basis:100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: .4rem;
+    align-items: center;
+}
+
+.userBox > p{
+    margin: 0;
+ } 
+
+#cred{ justify-content: center; }
+
+/*Diseño de la tabla*/
+
+.precontent-table{
+    flex-basis: 96%;
+    min-width: 750px;
+    display: flex;
+    justify-content: center;
+    width: 96vw;
+}
+
+.content-table {
+    flex-basis: 98%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    min-width: 300px;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    display: table;
+    justify-content: center;
+    margin: 10px 10px;
+    width: 100%;
+}
+
+.precontent-table::-webkit-scrollbar {
+    width: 7px;
+}
+
+.precontent-table::-webkit-scrollbar-thumb {
+    background: #216e8a;
+    border-radius: 5px;
+}
+
+.content-table thead tr {
+  background-color: #216e8a;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #216e8a;
+}
+
+.content-table tbody tr.active-row {
+  font-weight: bold;
+  color: #216e8a;
+}
+
+.content-table tbody tr:hover{
+    background-color: rgb(183, 204, 243);
+}
+
+.c-acciones{
+    text-align: center;
+}
+
+i{
+    margin: 0 6px;
+}
+/*Fin diseño de la tabla*/
+
+/*                  Validacion                      */
+.input-correcto{
+    /*input-correcto*/
+      font-size: 12px;
+      margin-bottom: 0;
+      display: none;/*none*/
+   }
+  
+  .input-error {
+      font-size: 12px;
+      color: red;
+      margin-bottom: 0;
+      display: block;
+  }
+  
+@media(max-width: 1112px){
+    #logoCusur img{ width: 12rem; }
+    #logoCta img{ width: 4.94rem; }
+    .header-element{
+        padding-left: .4rem;
+        padding-right: .4rem;
+    }
+
+    .main{
+        margin: 1rem .5rem 1rem .5rem;
+        padding: .5rem .5rem .5rem .5rem;
+        background: rgb(255, 255, 255);
+        flex: 1 1 65%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    textarea, select, .form-content input{
+        flex-basis: 100%;
+        font-size: .8rem;
+    }
+/*
+    .form-element{
+        margin-top: .3rem;
+        padding: .4rem;
+        flex-basis: 100%;
+     }
+
+     .form-input{
+         flex: 1 1 auto;
+     }
+*/
+    *{
+        font-size: 18px;
+    }   
+}
+/*
+@media(max-width: 1000px){
+    .main-body{
+        flex-direction: column;
+    }
+}
+*/
+@media(max-width: 1112px){
+    #logoCusur img{ width: 12rem; }
+    #logoCta img{ width: 4.94rem; }
+    .header-element{
+        padding-left: .4rem;
+        padding-right: .4rem;
+    }
+    *{
+        font-size: 18px;
+    }   
+}
+
+@media(max-width: 695px){
+    #logoCusur img{ width: 10rem; }
+    #logoCta img{ width: 4rem; }
+    .header-element{
+        padding-left: .3rem;
+        padding-right: .3rem;
+    }
+    *{
+        font-size: 14px;
+    }   
+}
+
+@media(max-width: 440px){
+    #logoCusur img{ width: 8rem; }
+    #logoCta img{ width: 3.2rem; }
+    .header-element{
+        padding-left: .3rem;
+        padding-right: .3rem;
+    }
+    *{
+        font-size: 14px;
+    }   
+    .header-element-content{
+        font-size: small;
+    }
+    h1{
+        font-size: 16px;
+    }
+}
+
+
+
+thead tr th{
+    color: bisque;
+}
+
+/*Para el modal*/
+.flex{
+	width: 100%;
+	height:100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.textos{
+	padding:300px;
+	color:#fff;
+	text-align: center;
+}
+
+h1{
+	font-size: 40px;
+	margin-bottom:20px;
+}
+
+a{
+	text-decoration: none !important;
+	font-size:20px;
+	display: inline-block;
+	border:1px solid #fff;
+	border-radius: 10px;
+    
+}
+td > .delete:hover, td > .edit:hover{
+    background: rgb(255,255,255); 
+    text-decoration: none !important;  
+    color:rgb(0, 0, 0); 
+    
+    border:1px solid rgb(255, 255, 255);
+}
+
+.modal{
+	display: none;
+	position: fixed;
+	z-index:1;
+	overflow: auto;
+	left: 0;
+	top:0;
+	width: 100%;
+	height:100%;
+	background: rgba(0, 0, 0, 0.452);
+}
+
+.contenido-modal{
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	width: 65%;
+	font-size: 24px;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, .4);
+	animation-name: modal;
+	animation-duration: 1s;
+    border: solid;
+	border-radius: .5em;
+}
+@keyframes modal{
+	from{top:-330px; opacity:0;}
+	to{top:0; opacity:1;}
+}
+.close{
+	color: #494949;
+	font-size:30px;
+	font-weight: bold;
+}
+.close:hover{
+	color:#c53522;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.modal-header, .footer{
+	padding: 8px 16px;
+	
+}
+
+.modal-header > .headM{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+p{
+	text-align: justify;
+}
+
+.modal-body{
+	padding: 20px 16px;
+	display: flex;
+	flex-direction: row;
+}
+
+form{
+	flex-basis: 100%;
+}
+
+.mod-form-block{
+	padding: 5px 10px;
+	margin: 2px 2px;
+	flex-basis: 100%;
+	display: flex;
+	justify-self: center;
+}
+
+.block{
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.mod-form-block > input, .mod-form-block > select, .mod-form-block > .block > input, .mod-form-block > .block > select, .mod-form-block > button {
+	border: solid;
+	border-radius: .5em;
+	flex-basis: 100%;
+	margin: 0 1rem;
+}
+
+@media screen and (max-width:900px){
+	.contenido-modal{
+		width: 70%;
+	}
+	.textos{
+		padding: 150px;
+	}
+}
+
+@media screen and (max-width:500px){
+	.textos{
+		padding:50px;
+	}
+}
+
+.mod-btn-mod{
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    order: 4;
+    padding-right: 20px;
+}
+
+#btn-modificar{
+    /*background-color: rgb(107, 110, 100);#216e8a*/
+    background-color: rgb(107, 110, 100);
+    color: white;
+    border: solid;
+    border-radius: 0.9em;
+    padding: 5px;
+}
+
+
+#ap_Pat, #ap_Mat, #nombre{
+    flex-basis: 32%;
+}
+
+#idP{
+    margin-right: 2rem;
+}
+
+.btn{ 
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    order: 4;
+    padding-right: 6%;
+    padding-bottom: 3%;
+}
+
+.btn > button{
+    background-color: rgb(107, 110, 100);
+    
+    color: white;
+    border: solid;
+	border-radius: .9em;
+    padding: 5px;
+}
+
+.btn > button:hover{ 
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+h2{
+    margin-left: 3%;
+    font-size: 1.5rem;
+
+}
+
+td > button{
+    border: solid;
+	border-radius: .9em;
+    padding: 5px;
+    background-color: forestgreen;
+    color: white;
+}
+
+td > button:hover{
+    background-color: rgb(100, 173, 100);
+    color: white;
+    cursor: pointer;
+}
+
+.fa-user-minus:hover{
+    color: rgb(196, 84, 84);
+    
+}
+
+.fa-user-minus{
+    color: rgb(197, 13, 13);
+    
+}
+
+

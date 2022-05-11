@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    /*
+        window.onbeforeunload=closing;
+        var closing = function(){
+            console.log("we are closing");
+            window.alert("u are closing");
+        }
+        window.onbeforeunload=function(e){
+            var dialogText='seguro de salir?';
+            e.returnValue=dialogText;
+            return dialogText;
+            
+        }*/
+
+        function debug(event){
+            var request = new XMLHttpRequest();
+            request.open('GET', 'intercepta.php', false);  // `false` makes the request synchronous
+            request.send(null);
+
+            if (request.status === 200) {
+            console.log(request.responseText);
+            }
+            console.log('Evento: ' + event.type);
+            return 'Evento: ' + event.type;
+            //event.stopPropagation();
+        }
+        
+    </script>
+</head>
+<body onbeforeunload="return debug(event)">
+    <div class="center">
+        <input type="checkbox">
+    </div>
+    <link rel="stylesheet" type="text/css" href="css/lol.css">
+</body>
+</html>

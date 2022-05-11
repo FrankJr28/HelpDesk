@@ -1,0 +1,107 @@
+/*                     CUERPO                       */
+
+.main-body{
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    order: 3;
+}
+
+.main{
+    margin: .5rem .5rem .5rem .5rem;
+    padding: .5rem .5rem .5rem .5rem;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+}
+
+.main-content{
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem, 1rem, 1rem, 1 rem;
+}
+
+.bloque{
+    flex-basis: 94%;
+}
+
+
+
+/*                  Tabla                           */
+
+.precontent-table{
+    flex-basis: 94%;
+    display: flex;
+    justify-content: center;
+    width: 96vw;
+    height: 40vh;
+    overflow: auto;
+}
+
+.content-table {
+    flex-basis: 100%;
+    border-collapse: collapse;
+    /*margin: 25px 0;*/
+    font-size: 0.9em;
+    
+    min-width: 300px;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    display: table;
+    justify-content: center;
+    
+    
+}
+
+.precontent-table::-webkit-scrollbar {
+    width: 7px;
+}
+
+.precontent-table::-webkit-scrollbar-thumb {
+    background: #216e8a;
+    border-radius: 5px;
+}
+
+.content-table thead tr {
+  background-color: #216e8a;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #216e8a;
+}
+
+.content-table tbody tr.active-row {
+  font-weight: bold;
+  color: #216e8a;
+}
+
+.content-table tbody tr:hover{
+    background-color: rgb(183, 204, 243);
+}
+
+
+thead tr th{
+    color: bisque;
+}

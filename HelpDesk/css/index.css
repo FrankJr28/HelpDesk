@@ -1,0 +1,336 @@
+@import url('normalize.css');
+
+a{
+    text-decoration: none;
+}
+
+*{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: #8b8a8a;
+    /*size: 18px;
+    inline-size: 18px;*/
+}
+
+
+body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    min-width: 200px;
+    height: 100vh;
+}
+/*                      HEADER                      */
+.header{
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    order: 1;
+}
+
+.header-element{
+    flex: 1 1 33%;
+    display: flex;
+    flex-direction: row;
+    padding-left: .8rem;
+    padding-right: .8rem;
+}
+
+.header-element-content{
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logoCta{ justify-content: flex-end;}
+#logoCusur{ justify-content: flex-start; }
+#logoCusur img{ width: 17rem; }
+#logoCta img{ width: 7rem; }
+
+.nav{
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    /*border: transparent;
+    border-top: rgb(112, 110, 110);
+    border-bottom: rgb(112, 110, 110);
+    border-style: solid;*/
+    order: 2;
+}
+
+.nav-element{
+    margin: .3rem 1rem .3rem 1rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+/*                     CUERPO                       */
+
+.main-body{
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    order: 3;
+}
+
+.main{
+    margin: 1rem .5rem 1rem .5rem;
+    padding: 1rem 1rem 1rem 3.5rem;
+    background: rgb(255, 255, 255);
+    flex: 1 1 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content{
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+form{
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.form-content{
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.form-element{
+   /* margin: .3rem .3rem .3rem .3rem;*/
+   margin-top: .3rem;
+   padding: .4rem;
+   flex-basis: 30%;
+   /*background-color: turquoise;*/
+}
+
+.form-content input, .form-content textarea, .form-content select, form button{
+    margin-top: .3rem;
+    background:rgb(255, 255, 255);
+    color: rgb(112, 110, 110);
+    border-style: solid;
+    border-color: rgb(112, 110, 110);
+    padding: .2rem;
+    border-radius: .8rem;
+    font-size: .8rem;
+    /*text-transform: uppercase;*/
+    display: flex;
+}
+
+select, .form-content input{
+    flex-basis: 40%;
+    font-size: 1rem;
+}
+
+textarea{
+    flex-basis: 40%;
+    font-size: 1rem;
+    height: 15vh;
+}
+
+#btn-Enviar, select{
+    background-color: rgb(112, 110, 110);
+    color: white;
+    font-size: 1rem;
+}
+
+.aside{
+    margin: 1rem .5rem 1rem .5rem;
+    border-style: solid;
+    border-color:  rgb(56, 98, 141);
+    border-radius: 1.5rem;
+    padding: 1.2rem;
+    flex: 1 1 25%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.aside-element{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aside-element-header{
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aside-element input{
+    background:rgb(255, 255, 255);
+    color: rgb(112, 110, 110);
+    border-style: solid;
+    border-color: rgb(112, 110, 110);
+    padding: 6px;
+    border-radius: 15px;
+    font-size: .9 rem;
+    text-transform: uppercase;
+}
+
+#online{
+    flex-basis: 100%;
+}
+
+/*                      footer                      */
+.footer{
+    color: gray;
+    background-color: beige;
+    padding: 1.5rem;
+    /* Flex */
+    order: 4;
+    display: block;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    height: 5rem;
+    font-size: 10 px;
+    flex: 1 1 100%;
+    order: 4;
+    align-self: flex-end;
+}
+
+.footer > div > p{
+    font-size: 12px;
+}
+
+/*                  Validacion                      */
+.input-correcto{
+    /*input-correcto*/
+      font-size: 12px;
+      margin-bottom: 0;
+      display: none;/*none*/
+   }
+  
+  .input-error {
+      font-size: 12px;
+      color: red;
+      margin-bottom: 0;
+      display: block;
+  }
+  
+@media(max-width: 1112px){
+    #logoCusur img{ width: 12rem; }
+    #logoCta img{ width: 4.94rem; }
+    .header-element{
+        padding-left: .4rem;
+        padding-right: .4rem;
+    }
+
+    .main{
+        margin: 1rem .5rem 1rem .5rem;
+        padding: .5rem .5rem .5rem .5rem;
+        background: rgb(255, 255, 255);
+        flex: 1 1 65%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    textarea, select, .form-content input{
+        flex-basis: 100%;
+        font-size: .8rem;
+    }
+/*
+    .form-element{
+        margin-top: .3rem;
+        padding: .4rem;
+        flex-basis: 100%;
+     }
+
+     .form-input{
+         flex: 1 1 auto;
+     }
+*/
+    *{
+        font-size: 18px;
+    }   
+}
+/*
+@media(max-width: 1000px){
+    .main-body{
+        flex-direction: column;
+    }
+}
+*/
+@media(max-width: 1112px){
+    #logoCusur img{ width: 12rem; }
+    #logoCta img{ width: 4.94rem; }
+    .header-element{
+        padding-left: .4rem;
+        padding-right: .4rem;
+    }
+    *{
+        font-size: 18px;
+    }   
+}
+
+@media(max-width: 695px){
+    #logoCusur img{ width: 10rem; }
+    #logoCta img{ width: 4rem; }
+    .header-element{
+        padding-left: .3rem;
+        padding-right: .3rem;
+    }
+    *{
+        font-size: 14px;
+    }   
+}
+
+@media(max-width: 440px){
+    #logoCusur img{ width: 8rem; }
+    #logoCta img{ width: 3.2rem; }
+    .header-element{
+        padding-left: .3rem;
+        padding-right: .3rem;
+    }
+    *{
+        font-size: 14px;
+    }   
+    .header-element-content{
+        font-size: small;
+    }
+    h1{
+        font-size: 16px;
+    }
+}
+
+/*
+#chatbox p{
+    font-size: .80 rem;
+}
+*/
+#chatbox h5{
+    font-size: .70rem;
+}
+
+.userText span{
+    font-size: .90rem;
+}
+
+.botText span{
+    font-size: .90rem;
+}
